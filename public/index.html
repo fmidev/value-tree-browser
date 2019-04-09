@@ -8,12 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <title>Arctic Value Tree</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9509467-52"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-9509467-52');
+</script>
+    <title>Arctic Observations Value Tree browser</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+ <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation"><a href="https://arcticobserving.org/">SAON</a></li>
+          <li role="presentation"><a href="https://oscar.wmo.int/">WMO OSCAR</a></li>
+          <li role="presentation"><a href="http://space.fmi.fi/ArcticGEOSS">ArcticGEOSS</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Browse Arctic Observations Value Trees</h3>
+    </div>
+  <div class="row marketing">
+    <p> The value tree right hand side is filled according to 
+the <a href="https://www.arcticobserving.org/news/268-international-arctic-observations-assessment-framework-released">framework for arctic observations assessment</a> 
+top three levels. The lower three-five layers have been built in a SAON project funded by the Finnish Foreign Affairs Ministry and the iCupe ERAPlanet project under EU grant No
+agreement No 689443. The report describing how the lower levels have been weighted is available <a href="/report/">here</a>. Please investigate the trees in the list below, choose 
+      a particularly interesting component from the dropdown menu and see how the related value flow towards it and from the component towards Societal Benefits.
+    <hr>
     <div id="root"></div>
-  </body>
+    <hr>
+   </body>
 </html>
