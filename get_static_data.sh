@@ -13,7 +13,7 @@ for ID in $(cat $LIST_FILE | jq -r .[].valuetreeId); do
     wget -O $VALUETREE_DIR/$ID --quiet $ENDPOINT/valuetrees/$ID
 done
 
-cat <<EOF > src/data/StaticData.js
+cat <<EOF > src/data/DataSource.js
 const treelist = $(cat $LIST_FILE);
 const trees = {
 $(
