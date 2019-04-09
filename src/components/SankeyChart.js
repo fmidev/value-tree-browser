@@ -275,7 +275,7 @@ class SankeyChart extends React.Component {
       .attr("height", (d) => d.dy)
       .attr("width", sankey.nodeWidth())
       .append("title")
-      .text(nodeTitle);
+      .text(d => nodeTitle(d, false));
 
     // add nodes text
     node.append("text")
