@@ -1,3 +1,7 @@
+# Demo on the arctic-obs.fmi.fi site
+
+You can try it on http://arctic-obs.fmi.fi/ pick a tree from the list and see how it works.
+
 # Read-only / static version of the arctic observation value tree
 
 This requires NodeJS 8.x and the readme expects you have cloned the repository and have ran `npm install`   
